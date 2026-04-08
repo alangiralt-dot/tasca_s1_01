@@ -33,17 +33,5 @@
   <footer>
     <div class="foot">.foot</div>
   </footer>
-  <!-- The Button -->
-  <button id="check-width-btn" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; cursor: pointer;">
-    Check Width
-  </button>
-
-  <!-- The Logic -->
-  <script>
-    document.getElementById('check-width-btn').onclick = function() {
-      const width = window.innerWidth;
-      alert("Current width: " + width + "px\nUse this value for your @media query!");
-    };
-  </script>
 </body>
 </html>
