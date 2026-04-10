@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  /*outline: 1px solid black;*/
+}
+body, header, main, #div1, #div3, #div4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header, main, footer {
+  background-color: black;
+}
+header, main, footer, #div1, #div2, #div3, #div4 {
+  padding: 10px;
+}  
+#div1 {
+  background-color: darkslateblue;
+}
+#div2 {
+  background-color: orange;
+}
+#div3 {
+  background-color: navy;
+}
+#div4 {
+  background-color: lightcoral;
+}
+.logo, .nav, .social, .banner, .article, .navigation, .publicity, .foot {
+  padding: 5px;
+}
+.logo {
+  background-color: lightcoral;
+}
+.nav {
+  background-color: lightcoral;
+}
+.social {
+  background-color: lightcoral;
+}
+.banner {
+  background-color: gold;
+}
+.article {
+  background-color: cornflowerblue;
+}
+.navigation {
+  background-color: lightblue;
+}
+.publicity {
+  background-color: gold;
+}
+.foot {
+  background-color: burlywood;
+}
