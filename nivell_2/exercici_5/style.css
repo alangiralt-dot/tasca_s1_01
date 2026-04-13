@@ -2,31 +2,29 @@
   box-sizing: border-box;
   /*outline: 1px solid black;*/
 }
-body, header, main, #div1, #div3, #div4 {
+a {
+  text-decoration: none;
+}
+body, header, main, #div1, #div4 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#div1 {
-  color: rgb(128, 128, 128);
+header, main, #div1, #div4 {
+  padding: 10px;
+}
+#div3 {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-#div2 {
-  display: flex;
-  justify-content: center;
-}
 body {
+  font-family: Arial;
   margin: 0 auto;
   scrollbar-width: none;
 }
 body::-webkit-scrollbar {
   display: none;
-}
-main, footer {
-  background-color: black;
-}
-header, main, footer, #div1, #div3, #div4 {
-  padding: 10px;
 }
 header {
   background-image: url('images/torii_gate.png');
@@ -35,6 +33,20 @@ header {
   min-height: 405px;
   padding-bottom: 0;
 }
+main, footer {
+  background-color: rgb(215,215,215);
+}
+footer {
+  padding: 0 10px;
+}
+#div1 {
+  color: rgb(128,128,128);
+  gap: 20px;
+}
+#div2 {
+  display: flex;
+  justify-content: center;
+}
 #div1 a {
   align-items: center;
   border-radius: 5px;
@@ -42,34 +54,36 @@ header {
   padding: 5px;
 }
 #div1 a:hover {
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(128,128,128);
   color: white;
-}
-#div1 a:hover svg{
-  fill: white;
-}  
-.nav a {
-  color: rgb(128, 128, 128);
-  font-family: Arial;
-  gap: 5px;
-  text-decoration: none;
 }
 #div1 svg {
   fill: rgb(128, 128, 128);
 }
+#div1 a:hover svg{
+  fill: white;
+}  
+#div3 {
+  /*background-color: rgb(241,241,241);*/
+}
+#div4 {
+  background-color: rgb(241,241,241);
+}  
 .nav {
   display: flex;
   justify-content: space-between;
 }
-#div3 {
-  background-color: navy;
+.nav a {
+  color: rgb(128,128,128);
+  gap: 5px;
 }
-#div4 {
-  background-color: lightcoral;
+.social {
+  display: flex;
+  gap: 20px;
 }
 .banner {
-  background-color: rgba(200, 200, 200, 0.33);
-  color: rgba(238, 116, 99, 0.71);
+  background-color: rgba(200,200,200,0.33);
+  color: rgba(238,116,99,0.71);
   display: flex;
   font-family: Georgia;
   font-size: 30px;
@@ -81,25 +95,65 @@ header {
   width: 95%;
   max-width: 1040px;
 }
-.article, .navigation, .publicity, .foot {
+.navigation, .publicity, .foot{
   padding: 5px;
 }
-.social {
-  display: flex;
-  gap: 20px;
-}
-.article {
-  background-color: cornflowerblue;
-}
-.navigation {
-  background-color: lightblue;
-}
-.publicity {
-  background-color: gold;
+.article, .foot {
+  background-color: rgb(241,241,241);
 }
 .foot {
-  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 4px;
+}
+.img-container {
+  position: relative;
+}
+.article-img {
+  display: block;
+  width: 100%;
+}
+.article-date {
+  bottom: 2px;
+  color: gold;
+  left: 4px;
+  position: absolute;
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.article-title {
+  background-color: lightcoral;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  height: 40px;
+  justify-content: end;
+  padding: 6px;
+}
+.article-text {
+  color:dimgray;
+  column-count: 2;
+  column-gap: 25px;
+}
+.article-footer a {
+  color: darkgray;
+}
+.navigation {
+  color: black;
+  text-align: center;
+}
+
 @media (min-width: 700px) {
   #div3 {
     display: grid;
